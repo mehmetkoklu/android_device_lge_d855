@@ -51,6 +51,18 @@ TARGET_RECOVERY_FSTAB := device/lge/d855/rootdir/etc/fstab.g3
 # NFC
 BOARD_NFC_CHIPSET := pn547
 
+# Bliss Config Flags
+BLISSIFY := true
+BLISS_O3 := true
+BLISS_STRICT := true
+BLISS_GRAPHITE := true
+BLISS_KRAIT := true
+Bliss_Build_Block:=1
+TARGET_TC_ROM :=4.9-linaro
+TARGET_TC_KERNEL :=4.9-linaro
+TARGET_GCC_VERSION_EXP := $(TARGET_TC_ROM)
+TARGET_KERNEL_CUSTOM_TOOLCHAIN := $(TARGET_TC_KERNEL)
+
 # Releasetools
 TARGET_RECOVERY_UPDATER_LIBS := librecovery_updater_g3
 TARGET_RELEASETOOLS_EXTENSIONS := device/lge/d855
